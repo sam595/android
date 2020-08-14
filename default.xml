@@ -12,11 +12,17 @@
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
            revision="refs/tags/android-8.1.0_r52" />
-
+  
+  <remote name="sony" 
+          fetch="https://github.com/sonyxperiadev/" 
+                                                  />
+  
   <default revision="refs/heads/lineage-15.1"
            remote="github"
            sync-c="true"
            sync-j="4" />
+  
+
 
   <!-- AOSP Projects -->
 
@@ -570,6 +576,7 @@
   <project path="tools/test/connectivity" name="platform/tools/test/connectivity" groups="pdk" remote="aosp" />
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed" remote="aosp" />
   <project path="tools/tradefederation/core" name="platform/tools/tradefederation" groups="pdk,tradefed" remote="aosp" />
+  <project path="device/sony/keyaki" name="device-sony-keyaki" groups="device" remote="sony" revision="o-mr1" />
 
   <include name="snippets/lineage.xml" />
 
