@@ -17,6 +17,8 @@
            remote="github"
            sync-c="true"
            sync-j="4" />
+  
+  <remote name="sony" fetch="https://github.com/sonyxperiadev/" />
 
   <!-- AOSP Projects -->
 
@@ -690,7 +692,7 @@
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed" remote="aosp" />
   <project path="tools/tradefederation/core" name="platform/tools/tradefederation" groups="pdk,tradefed" remote="aosp" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" remote="aosp" />
-
+  <project path="device/sony/keyaki" name="device-sony-keyaki" groups="device" remote="sony" revision="o-mr1" />
   <include name="snippets/lineage.xml" />
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
